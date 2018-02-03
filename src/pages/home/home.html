@@ -1,18 +1,70 @@
 <ion-header>
-  <ion-navbar>
+  <!-- <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-title>หน้าหลัก</ion-title>
+  </ion-navbar> -->
+  <ion-toolbar >
+    <button ion-button icon-only menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>หน้าหลัก</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="openSignup()">
+        <ion-icon name="key"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50>
+        <button ion-button block large icon-left >
+          <ion-icon name="home"></ion-icon>
+          หน้าหลัก
+        </button>
+      </ion-col>
+      <ion-col width-50>
+        <button ion-button block large icon-left >
+          <ion-icon name="aperture"></ion-icon>
+          เกี่ยวกับ
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-75>
+        <button ion-button block large icon-left >
+          <ion-icon name="person"></ion-icon>
+          ติดต่อเรา
+        </button>
+      </ion-col>
+      <ion-col width-25>
+        <button ion-button block large icon-left >
+          <ion-icon name="settings"></ion-icon>
+          
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+        <button ion-button block full large icon-left >
+          <ion-icon name="heart"></ion-icon>
+          สินค้า
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+  <!-- <h3>Ionic Menu Starter</h3>
 
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>
