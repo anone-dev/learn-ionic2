@@ -1,3 +1,4 @@
+import { NotePage } from './../pages/note/note';
 import { CoursePage } from './../pages/course/course';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
@@ -29,7 +30,8 @@ export class MyApp {
       { title: 'เกี่ยวกับเรา', component: AboutPage },
       { title: 'คอร์สเรียน', component: CoursePage },
       { title: 'ข่าวสาร', component: NewsPage },
-      { title: 'ลูกค้า', component: CustomerPage}
+      { title: 'ลูกค้า', component: CustomerPage},
+      { title: 'โน็ต', component: NotePage}
     ];
 
   }
