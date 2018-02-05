@@ -49,7 +49,7 @@ export class NotePage {
 
   save(note: any){
     if(this.key){
-      this.itemsRef.update(this.key, {note});
+      this.itemsRef.push({note});
       this.isToogle = false;
     }
   }
@@ -69,7 +69,7 @@ export class NotePage {
   openForm(){
     this.isToogle = !this.isToogle;
   }
-  
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad NotePage');
   }
