@@ -28,7 +28,6 @@ import { CustomerPage } from '../pages/customer/customer';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { Camera } from '@ionic-native/camera';
-import { BarcodePage } from '../pages/barcode/barcode';
 
 export const config = {
   apiKey: "AIzaSyBuxL3r45mvPizP-Jnlg7RogCifBKl5fcs",
