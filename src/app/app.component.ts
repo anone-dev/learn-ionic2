@@ -1,3 +1,4 @@
+import { CameraPage } from './../pages/camera/camera';
 import { NotePage } from './../pages/note/note';
 import { CoursePage } from './../pages/course/course';
 import { Component, ViewChild } from '@angular/core';
@@ -10,6 +11,7 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about'; 
 import { NewsPage } from '../pages/news/news';
 import { CustomerPage } from '../pages/customer/customer';
+import { BarcodePage } from '../pages/barcode/barcode';
 
 @Component({
   templateUrl: 'app.html'
@@ -31,7 +33,9 @@ export class MyApp {
       { title: 'คอร์สเรียน', component: CoursePage },
       { title: 'ข่าวสาร', component: NewsPage },
       { title: 'ลูกค้า', component: CustomerPage},
-      { title: 'โน็ต', component: NotePage}
+      { title: 'โน็ต', component: NotePage},
+      { title: 'ถ่ายรูป', component: CameraPage},
+      { title: 'แสกนบาร์โค้ด', component: BarcodePage}
     ];
 
   }

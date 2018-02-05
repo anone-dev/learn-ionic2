@@ -1,3 +1,5 @@
+import { BarcodePage } from './../pages/barcode/barcode';
+import { CameraPage } from './../pages/camera/camera';
 import { NotePage } from './../pages/note/note';
 import { SignupPage } from './../pages/signup/signup';
 import { YoutubePage } from './../pages/youtube/youtube';
@@ -25,6 +27,8 @@ import { SQLite } from '@ionic-native/sqlite';
 import { CustomerPage } from '../pages/customer/customer';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { Camera } from '@ionic-native/camera';
+import { BarcodePage } from '../pages/barcode/barcode';
 
 export const config = {
   apiKey: "AIzaSyBuxL3r45mvPizP-Jnlg7RogCifBKl5fcs",
@@ -50,6 +54,8 @@ export const config = {
     SignupPage,
     CustomerPage,
     NotePage,
+    CameraPage,
+    BarcodePage
   ],
   imports: [
     BrowserModule,
@@ -73,16 +79,19 @@ export const config = {
     SignupPage,
     CustomerPage,
     NotePage,
+    CameraPage,
+    BarcodePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     SQLite,
     AngularFireDatabase,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CourseServiceProvider,
     NewsServiceProvider,
-    AuthServiceProvider
+    AuthServiceProvider,
   ]
 })
 export class AppModule {}
