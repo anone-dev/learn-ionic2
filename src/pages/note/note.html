@@ -35,7 +35,7 @@
       </ion-item>
 
       <div padding>
-        <button ion-button type="submit" [disabled]="!note.form.valid" >เพิ่ม</button>
+        <button ion-button type="submit" [disabled]="!note.form.valid" (click)="save(note.value)">เพิ่ม</button>
         <button ion-button type="button" [disabled]="!note.form.valid" (click)="update(note.value)">แก้ไข</button>
       </div>
     </ion-list>
