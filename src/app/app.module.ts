@@ -1,3 +1,4 @@
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { BarcodePage } from './../pages/barcode/barcode';
 import { CameraPage } from './../pages/camera/camera';
 import { NotePage } from './../pages/note/note';
@@ -87,6 +88,7 @@ export const config = {
     SQLite,
     AngularFireDatabase,
     Camera,
+    BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CourseServiceProvider,
     NewsServiceProvider,
