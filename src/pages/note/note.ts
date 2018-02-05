@@ -11,7 +11,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+// @IonicPage()
 @Component({
   selector: 'page-note',
   templateUrl: 'note.html',
@@ -37,7 +37,7 @@ export class NotePage {
   showData(){
     this.itemsRef = this.af.list('/');
     this.items = this.itemsRef.snapshotChanges().map(changes => {
-      return changes.map(c => ({ key: c.payload.key, ...c.payload.val()}));
+      return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
     });
   }
 
@@ -48,10 +48,8 @@ export class NotePage {
   }
 
   save(note: any){
-    if(this.key){
-      this.itemsRef.push({note});
-      this.isToogle = false;
-    }
+    this.itemsRef.push({note});
+    this.isToogle = false;
   }
 
   update(note: any){

@@ -77,8 +77,8 @@ export const config = {
   providers: [
     StatusBar,
     SplashScreen,
-    AngularFireDatabase,
     SQLite,
+    AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CourseServiceProvider,
     NewsServiceProvider,
